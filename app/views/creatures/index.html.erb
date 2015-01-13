@@ -1,0 +1,27 @@
+
+<div class="row">
+
+  <div class="col-md-7 col-md-offset-1">
+<div class="main">
+    <table class="table">
+         <h1>Bog Creatures From the Isle of Skye</h1><br/>
+
+        <tr>
+          <th><h3>Name:</h3></th>
+          <th><h3>Description:<h3></th>
+          <th> &nbsp</th>
+        </tr>
+        <tr>
+
+        <% @creature_list.each do |creature| %>
+          <td><%= creature.name %></td>
+          <td><%= creature.desc %></td>
+          <td><%= link_to 'Details', creature,  :class => "btn btn-xs" %></td>
+          <td><%= link_to 'Update', edit_creature_path(creature), :class => "btn btn-xs" %></td>
+          <td><%= link_to 'Delete', creature, method: :delete, :data => {:confirm  => "Are you sure you want to delete?"},:class => "btn btn-xs" %></td>
+        </tr>
+      <% end %>
+    </table>
+    </div>
+  </div> <!-- close div row-->
+  </div>

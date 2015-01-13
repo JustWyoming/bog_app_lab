@@ -1,0 +1,24 @@
+
+<div class="row">
+
+
+<div class ="col-md-5 col-md-offset-1">
+<div class="main">
+<h1>Edit Creature Details:</h1>
+
+<div class="form-group">
+<%= form_for @creature, url: creature_path(@creature), html: {class: "form"}, method: :patch do |f| %>
+
+    <%= f.text_field :name, :placeholder => "Creature Name", :class => "form-control"%>
+    <%= f.text_area :desc, :placeholder => "Creature Description", :class => "form-control text-area" %><br/>
+
+
+    <%= f.submit :class => "btn"%>
+
+<% end %>
+
+</div>
+</div><!-- close columns -->
+</div><!-- close form group -->
+
+</div><!-- close row -->

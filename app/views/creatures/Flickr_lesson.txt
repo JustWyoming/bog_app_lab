@@ -1,0 +1,6 @@
+Flickr mini lesson
+
+* How to install gems and use in proj
+* setup secret keys for rails
+* test flicker gem in a separate file
+* make a new rails project passing data froa form to the flicker api

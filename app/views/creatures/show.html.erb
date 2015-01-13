@@ -1,0 +1,25 @@
+<div class="main">
+<div class="row">
+<div class="col-md-7 col-md-offset-1">
+        <%if flash.any? %>
+          <% flash.each do |key, message| %>
+            <div class="alert alert-<%= key %>"><%= message %></div>
+        <% end %>
+        <% end %>
+<h1><%= @creature.name %></h1>
+
+<div class="about">
+<%= @creature.desc %><br/>
+
+<br/><%= button_to 'Delete', @creature, method: :delete, :class => "btn" %><br/><br/>
+
+<h2>Image Results: &nbsp; <small class="header-change"><%= @search %></small></h2>
+
+<% @results[0..23].each do |photo| %>
+<%= link_to image_tag(photo.first), photo.last, :class => "hover" %>
+
+<% end %>
+</div>
+</div><!-- end of column -->
+</div><!-- end of row -->
+</div>

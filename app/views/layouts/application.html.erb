@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Forgotten Bog Creatures of the Isle of Skye</title>
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <script src="//use.typekit.net/nbi2ewn.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script> <!-- has to come after Ruby javascript include to load properly -->
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <div class="container-fluid">
+
+  <div class="container">
+
+
+
+    <ul class="nav nav-pills navbar-right">
+      <li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "Home", root_path %></li>
+      <li class="<%= 'active' if current_page?(creatures_path) %>"><%= link_to "View Creatures", creatures_path %></li>
+      <li class="<%= 'active' if current_page?(new_creature_path) %>"><%= link_to "Add Creatures", new_creature_path %></li>
+    </ul>
+
+   <div class="page-header">
+      <a href="/"><%= image_tag("medusa-logo2.png", :alt => "medusa-logo") %></a>
+    </div>
+
+<%= yield %>
+  </div><!-- end container tab -->
+  <footer class="footer text-center">
+    <div class="container">
+      <p class="footer">&copy; 2015 JustWyoming &nbsp;| &nbsp;<a href="https://github.com/JustWyoming" target="_blank">GitHub</a> &nbsp;| &nbsp;<a href="http://wyomingtelford.com" target="_blank">Portfolio</a></p>
+    </div>
+  </footer>
+  </div> <!-- end of background div-->
+</body>
+</html>
