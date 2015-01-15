@@ -6,6 +6,7 @@
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> -->
 
 
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -26,6 +27,7 @@
       <li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "Home", root_path %></li>
       <li class="<%= 'active' if current_page?(creatures_path) %>"><%= link_to "View Creatures", creatures_path %></li>
       <li class="<%= 'active' if current_page?(new_creature_path) %>"><%= link_to "Add Creatures", new_creature_path %></li>
+      <li class="<%= 'active' if current_page?(tags_new_path) %>"><%= link_to "Add Tag", tags_new_path%></li>
     </ul>
 
    <div class="page-header">

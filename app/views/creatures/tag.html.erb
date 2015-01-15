@@ -1,0 +1,27 @@
+<div class="row">
+<div class="col-md-7 col-md-offset-1">
+<%= render 'shared/flash' %>
+<h1>View Creatures by Tag: <small><%= params[:tag] %> </small></h1>
+
+  <div><%= link_to "&larr; back to list".html_safe, creatures_path %></div><br/>
+
+
+<div class="row">
+
+  <div class="col-sm-8">
+<div class="tags">
+
+          <h3>Skye Bog Creatures Tagged: <%= params[:tag] %></h3>
+
+
+        <% @creature.each do |creature| %>
+          <td><%= creature.name %></td><br/>
+
+
+      <% end %>
+
+    </div>
+    </div>
+  </div> <!-- close div row-->
+  </div>
+  </div><!-- close main div row -->

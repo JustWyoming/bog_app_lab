@@ -2,29 +2,26 @@
 
 
 <div class="row">
+ <%= render 'shared/flash' %>
+  <div class ="col-md-5 col-md-offset-1">
+    <div class="main">
 
-<div class ="col-md-5 col-md-offset-1">
-<div class="main">
-<h1 class="tk-penna-swashes">Add a creature to our database</h1>
-<div class="form-group">
+      <h1 class="tk-penna-swashes">Add a creature to our database</h1>
+      <div class="form-group">
 
- <%if flash.any? %>
-          <% flash.each do |key, message| %>
-            <div class="alert alert-<%= key %>"><%= message %></div>
-        <% end %>
-      <% end %>
+       <%= bootstrap_form_for @creature, html: {class: "form"} do |f| %>
 
+       <%= f.text_field :name, :placeholder => "Creature Name", :class => "form-control"%>
+       <%= f.text_area :desc, :placeholder => "Creature Description", :class => "form-control text_area" %>
 
-<%= form_for @creature, html: {class: "form"} do |f| %>
+       <%= f.collection_check_boxes :tag_ids, @tags,  :id, :name %><br/>
+       <%= f.submit :class => "btn"%>
 
-    <%= f.text_field :name, :placeholder => "Creature Name", :class => "form-control"%>
-    <%= f.text_area :desc, :placeholder => "Creature Description", :class => "form-control text_area" %><br/>
+       <% end %>
 
 
-    <%= f.submit :class => "btn"%>
+     </div>
+   </div><!-- close columns -->
+ </div><!-- close form group -->
 
-<% end %>
-</div>
-</div><!-- close columns -->
-</div><!-- close form group -->
 </div><!-- close row -->

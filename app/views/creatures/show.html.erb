@@ -1,25 +1,29 @@
 <div class="main">
-<div class="row">
-<div class="col-md-7 col-md-offset-1">
-        <%if flash.any? %>
-          <% flash.each do |key, message| %>
-            <div class="alert alert-<%= key %>"><%= message %></div>
+  <div class="row">
+    <div class="col-md-7 col-md-offset-1">
+  <%= render 'shared/flash' %>
+
+
+      <h1><%= @creature.name %></h1>
+      <div><%= link_to "&larr; back to list".html_safe, creatures_path %></div>
+      <div class="about">
+        <%= @creature.desc %><br/><br/>
+
+        <div>
+        <h3>Tags</h3>
+          <% @creature.tags.each do |tag, index| %>
+
+          <%= " " unless index = 0 %>
+          <%=button_to tag.name, tag_path(tag.name), method: :get, :class => "btn btn-xs" %>
+          <%end%>
+        </div>
+        <br/><br/><h2>Image Results: &nbsp; <small class="header-change"><%= @search %></small></h2>
+
+        <% @results[0..23].each do |photo| %>
+        <%= link_to image_tag(photo.first), photo.last, :class => "hover" %>
+
         <% end %>
-        <% end %>
-<h1><%= @creature.name %></h1>
-
-<div class="about">
-<%= @creature.desc %><br/>
-
-<br/><%= button_to 'Delete', @creature, method: :delete, :class => "btn" %><br/><br/>
-
-<h2>Image Results: &nbsp; <small class="header-change"><%= @search %></small></h2>
-
-<% @results[0..23].each do |photo| %>
-<%= link_to image_tag(photo.first), photo.last, :class => "hover" %>
-
-<% end %>
-</div>
-</div><!-- end of column -->
-</div><!-- end of row -->
+      </div>
+    </div><!-- end of column -->
+  </div><!-- end of row -->
 </div>

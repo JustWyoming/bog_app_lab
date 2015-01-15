@@ -1,0 +1,6 @@
+<div class="tagcloud">
+<% tag_max = @tags.map{|t| t.creatures.length}.sort.last %>
+<% @tags.each do |tag| %>
+<% font-size = (tag.creatures.length.to_f / max_tag) * 50 %>
+<% link_to tag.name, tag_path(tag.name), :style => 'font-size: #{font_size.to_i}30px' %>
+</div>
