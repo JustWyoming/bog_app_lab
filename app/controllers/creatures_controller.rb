@@ -22,12 +22,13 @@ class CreaturesController < ApplicationController
   def create
     # @new = @creature.tags.create(tag_params)
     @creature = Creature.new(creature_params)
+    @tags = Tag.all
 
     if @creature.save
      @creature.tags.clear
-     tags = params[:creature][:tag_ids]
+     tags = params[:creature][:tag_ids].split(",")
      tags.each do |tag_id|
-      @creature.tags << Tag.find(tag_id) unless tag_id.blank?
+      @creature.tags << Tag.find_or_create_by({name:tag_id}) unless tag_id.blank?
     end
     flash[:success] = "Your creature has been added."
     redirect_to @creature
@@ -38,6 +39,7 @@ class CreaturesController < ApplicationController
 end
 
 def update
+  # @creature = Creature.find(params[:id])
   @tags = Tag.all
     # @creature = Creature.find(params[:id]) # not needed because I have a before statement
 
@@ -47,9 +49,10 @@ def update
        #it will also work in create
 
        @creature.tags.clear
-       tags = params[:creature][:tag_ids]
+       tags = params[:creature][:tag_ids].split(",")
        tags.each do |tag_id|
-        @creature.tags << Tag.find(tag_id) unless tag_id.blank?
+
+        @creature.tags << Tag.find_or_create_by({name:tag_id}) unless tag_id.blank?
       end
       flash[:success] = "Thank you for editing #{@creature.name}."
       redirect_to @creature

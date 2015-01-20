@@ -13,8 +13,9 @@
 
        <%= f.text_field :name, :placeholder => "Creature Name", :class => "form-control"%>
        <%= f.text_area :desc, :placeholder => "Creature Description", :class => "form-control text_area" %>
-
-       <%= f.collection_check_boxes :tag_ids, @tags,  :id, :name %><br/>
+       <div class="checkTags">
+       <%= f.text_field :tag_ids, :value => @creature.tags.map{|t| t.name}.join(","), 'data-role'=>'tagsinput' %>
+       </div>
        <%= f.submit :class => "btn"%>
 
        <% end %>
