@@ -28,13 +28,7 @@ ul.nav.nav-pills.navbar-right>li.active>a, .nav-pills>li.active>a:hover, .nav-pi
 div.page-header {
   border-bottom: none;
   margin-top: 10px;
- /* min-height: 50px;
-  background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0)));  Chrome,Safari4+
-  background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
-  background: -o-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
-  background: -ms-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
-  background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);*/
+
 
 
 }
@@ -218,10 +212,3 @@ div.footer, p{
   font-size: .95em;
 
 }
-
-
-/*.background{background: url('images/swamp_king_by_candra-d385yis.jpg') no-repeat cover; }
-.background { background-image: url(<%= assets_path 'images/swamp_king_by_candra-d385yis.jpg' %>) }*/
-/*.background {
-  background-image: image-url("swamp_king_by_candra-d385yis.jpg");
-}*/
