@@ -114,6 +114,21 @@ form .btn:hover{
 form .control-label {
   display:none;
 }
+div.bootstrap-tagsinput{
+  background: rgba(124,129,107, .7);
+  border: 1px solid #1c1f18;
+  box-shadow: inset 1px 1px 3px #1c1f18;
+  font-family: 'sorts_mill_goudyitalic' cursive;
+  color:#cbe4e8;
+  border-radius: 10px;
+  width: 400px;
+}
+span.tag.label.label-info {
+
+  background: rgba(81,114,105, 0.5);
+  color: #ccc;
+  font-family: 'sorts_mill_goudyitalic';
+}
 
 .btn {
   margin: 0 auto;

@@ -14,7 +14,7 @@
        <%= f.text_field :name, :placeholder => "Creature Name", :class => "form-control"%>
        <%= f.text_area :desc, :placeholder => "Creature Description", :class => "form-control text_area" %>
        <div class="checkTags">
-       <%= f.text_field :tag_ids, :value => @creature.tags.map{|t| t.name}.join(","), 'data-role'=>'tagsinput' %>
+       <%= f.text_field :tag_ids, :placeholder => "Add Tags", :value => @creature.tags.map{|t| t.name}.join(","), 'data-role'=>'tagsinput' %>
        </div>
        <%= f.submit :class => "btn"%>
 
