@@ -33,7 +33,7 @@ div.page-header {
 
 }
 body{
-  /*background-image: url("http://fc02.deviantart.net/fs70/i/2011/027/4/4/swamp_king_by_candra-d385yis.jpg");*/
+
   background-image: asset_url("swamp_king_by_candra-d385yis.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -101,7 +101,7 @@ form textarea {
 
 }
 form .btn {
-/*  margin: 0 auto;*/
+
 float:left;
   display: block;
   background: rgba(81,114,105, 0.5);
