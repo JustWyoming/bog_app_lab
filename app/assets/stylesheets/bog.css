@@ -206,7 +206,7 @@ img:hover {
   bottom: 0;
   height: 50px;
   margin-top: 40px;
-  color: ##cbe4e8;
+  color: #cbe4e8;
   padding: 10px 10px;
   background: rgba(124,129,107, .3);
   box-shadow: inset 0 -30px 25px #1c1f18;
@@ -214,7 +214,7 @@ img:hover {
   border: none;
 }
 div.footer, p{
-  color: ##cbe4e8;
+  color: #cbe4e8;
   font-size: .95em;
 
 }
