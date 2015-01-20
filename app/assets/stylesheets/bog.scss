@@ -1,0 +1,214 @@
+
+
+.nav {
+  margin-top: 10px;
+}
+.nav.nav-pills>li>a:hover {
+  background-color: rgba(124,129,107, .7);
+
+}
+.nav.nav-pills>li>a {
+ color: #cbe4e8;
+
+}
+ul.nav.nav-pills.navbar-right>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+  background-color: rgba(81,114,105, 0.5);
+  color: #cbe4e8;
+
+}
+.container-fluid {
+   min-height: 50px;
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0)));  /*Chrome,Safari4+*/
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+  background: -o-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+  background: -ms-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+  background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+}
+div.page-header {
+  border-bottom: none;
+  margin-top: 10px;
+
+
+
+}
+body{
+  /*background-image: url("http://fc02.deviantart.net/fs70/i/2011/027/4/4/swamp_king_by_candra-d385yis.jpg");*/
+  background-image: url(/assets/swamp_king_by_candra-d385yis.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'sorts_mill_goudyitalic';
+  color: #cbe4e8;
+  font-size: 1.4em;
+
+}
+p {
+  font-family: 'sorts_mill_goudyitalic';
+  font-size: 1.11em;
+}
+a:link, a:visited {
+  color: #cbe4e8;
+}
+p a:hover{
+  background: none !important;
+  color: #ccc !important;
+  text-decoration: none;
+}
+.tk-penna-swashes{
+
+}
+
+h1 {
+  font-family: "penna-swashes";
+  font-size: 3.25em;
+  color: rgb(124,129,107);
+
+}
+h2 {
+  font-family: "penna-swashes";
+  color: rgb(124,129,107);
+  font-size: 2.25em;
+  text-shadow: -2px 4px 3px #111;
+  font-weight: bold;
+
+}
+h3 {
+  font-family: "penna-swashes";
+  font-weight: bold;
+  color: rgb(124,129,107);
+}
+
+h4 {
+  font-family: "penna-swashes";
+  color: rgb(124,129,107);
+}
+
+form .form-control {
+  background: rgba(124,129,107, .7);
+  border: 1px solid #1c1f18;
+  box-shadow: inset 1px 1px 3px #1c1f18;
+  font-family: 'sorts_mill_goudyitalic' cursive;
+  color:#cbe4e8;
+  border-radius: 10px;
+}
+form textarea {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 5px;
+  min-height: 100px;
+
+
+}
+form .btn {
+/*  margin: 0 auto;*/
+float:left;
+  display: block;
+  background: rgba(81,114,105, 0.5);
+  color: #ccc;
+  font-family: 'sorts_mill_goudyitalic';
+}
+form .btn:hover{
+  color: #cbe4e8;
+}
+form .control-label {
+  display:none;
+}
+
+.btn {
+  margin: 0 auto;
+  margin-left: 3px;
+  display: block;
+  background: rgba(81,114,105, 0.7);
+  color: #ccc;
+  font-family: 'sorts_mill_goudyitalic';
+}
+.btn:hover{
+  color: #cbe4e8;
+}
+.main {
+  min-height: 400px;
+
+}
+
+.tags {
+  min-height: 300px;
+  padding: 10px 10px;
+  background: rgba(124,129,107, .3);
+  box-shadow: inset 0 -30px 25px #1c1f18;
+  border-radius: 10px;
+  border: none;
+
+}
+
+
+.table>tbody>tr>th {
+  border-top: none !important;
+
+}
+.tr{
+  border-top: 2px solid #1c1f18 !important;;
+}
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{
+  border-bottom: 2px solid #1c1f18 !important;
+}
+
+td{
+  border-top: none !important;
+  border-bottom: 2px solid #1c1f18 !important;
+  min-width: 105px;
+}
+#error_explanation li{
+  margin-left: 5px;
+  display:block;
+
+}
+
+
+.about {
+  min-height: 400px;
+  padding: 10px 10px;
+  background: rgba(124,129,107, .3);
+  box-shadow: inset 0 -30px 25px #1c1f18;
+  border-radius: 10px;
+  border: none;
+}
+.table {
+ /* min-height: 400px;*/
+  padding: 40px 10px;
+  background: rgba(124,129,107, .3);
+  box-shadow: inset 0 -30px 25px #1c1f18;
+  border-radius: 10px;
+  border: none;
+}
+
+
+.header-change {
+   color: #cbe4e8;
+}
+
+img:hover {
+    opacity: .4;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+.tagcloud{
+  padding: 3px;
+}
+
+.footer{
+  float:clear !important;
+  bottom: 0;
+  height: 50px;
+  margin-top: 40px;
+  color: #cbe4e8;
+  padding: 10px 10px;
+  background: rgba(124,129,107, .3);
+  box-shadow: inset 0 -30px 25px #1c1f18;
+  border-radius: 10px;
+  border: none;
+}
+div.footer, p{
+  color: #cbe4e8;
+  font-size: .95em;
+
+}
